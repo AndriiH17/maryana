@@ -121,5 +121,23 @@
   <audio autoplay loop>
   <source src="Shape Of My Heart - Sting.m4a" type="audio/mpeg">
 </audio>
+
+   <script>
+    const music = document.getElementById("bg-music");
+
+    const startAudio = () => {
+      music.play().catch(() => {
+        
+      });
+
+      
+      document.removeEventListener("click", startAudio);
+      document.removeEventListener("touchstart", startAudio);
+    };
+
+    
+    document.addEventListener("click", startAudio);
+    document.addEventListener("touchstart", startAudio);
+  </script>
 </body>
 </html>
