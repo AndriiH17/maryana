@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Ти в моєму серці</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to right, #ff03c0, #f684b3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .card {
+      background: #fff;
+      padding: 3rem 2rem;
+      border-radius: 25px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+      max-width: 700px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .heart {
+      font-size: 3.5rem;
+      color: #e91e63;
+      margin-bottom: 1rem;
+      animation: pulse 1s infinite;
+    }
+
+    h1 {
+      font-size: 2.7rem;
+      color: #d81b60;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2.2rem;
+      background: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 40px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #e91e63;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .phone {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #ff4081;
+    }
+  </style>
+
+  <script>
+  function showNumber() {
+    const phoneDiv = document.getElementById("phoneNumber");
+    phoneDiv.style.display = "block";
+  }
+</script>
+</head>
+<body>
+  <div class="card">
+    <div class="heart">💗</div>
+    <h1>Марʼяночко</h1>
+    <h2>Я хотів сказати дещо важливе</h2>
+    <p>
+      Я не знаю, чи ти читаєш це з посмішкою, чи з сумом. Але якщо ти тут — значить, у твоєму серці ще щось живе.  
+      Я не досконалий, але мої почуття — справжні. І я завжди буду пам'ятати кожен момент із тобою.  
+      Навіть якщо не будемо разом, я завжди збережу в собі добро і тепло, яке ти мені подарувала.  
+    </p>
+    <button class="btn" onclick="showNumber()">Напиши мені❤️‍🩹❤️‍🩹❤️‍🩹</button>
+<div id="phoneNumber" class="phone" style="display: none;">inst: andrijgrigorcak</div>
+
+    <footer>Завжди твій — Андрій</footer>
+  </div>
+</body>
+</html>
